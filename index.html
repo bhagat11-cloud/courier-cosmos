@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Courier Chaos - Developed by Navesh Bhagat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- UI (Option C Layout) -->
+<div id="ui">
+  <div id="leftUI">
+    <div class="box">Coins: <span id="coinVal">0</span></div>
+    <div class="box">Distance: <span id="distVal">0</span> m</div>
+    <div id="progressWrap">
+      <div id="progressBar"><div id="progressFill"></div></div>
+      <small>Next booster at 50 coins</small>
+    </div>
+  </div>
+
+  <div id="centerUI">
+    <div id="rageText">RAGE</div>
+    <div id="rageBar"><div id="rageFill"></div></div>
+  </div>
+
+  <div id="rightUI">
+    <div class="box">Score: <span id="scoreVal">0</span></div>
+    <div class="box">Level: <span id="levelVal">1</span></div>
+    <button id="pauseBtn">Pause</button>
+  </div>
+</div>
+
+<canvas id="game" width="900" height="500"></canvas>
+
+<div id="watermark">Developed by <b>Navesh Bhagat</b></div>
+
+<div id="overlay" class="hidden">
+  <div id="overMsg"></div>
+  <button id="restart">Restart</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
